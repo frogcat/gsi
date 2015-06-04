@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GSI Scope</title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+<link rel="stylesheet" href="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+<script src="//cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//frogcat.github.io/leaflet-tilelayer-mask/leaflet-tilelayer-mask.js"></script>
+<script src="script.js"></script>
+<style>
+body {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: left;
+	width: auto;
+	height: 100%;
+	font-size: 9pt;
+	overflow-y: scroll;
+	color: white;
+	background:rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 1px black;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu li {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+li.heading {
+	margin-top: 1em !important;
+	color:orange;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+</head>
+<body>
+	<div id="map"></div>
+	<div id="menu">
+		<ul>
+		</ul>
+	</div>
+</body>
+</html>
