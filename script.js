@@ -42,9 +42,9 @@ function init() {
 	}
 
 	if ($("input.fg[checked='checked']").length == 0)
-		$("input.fg").eq(0).attr("checked", "checked");
+		$("input.fg").eq(6).attr("checked", "checked");
 	if ($("input.bg[checked='checked']").length == 0)
-		$("input.bg").eq(6).attr("checked", "checked");
+		$("input.bg").eq(0).attr("checked", "checked");
 
 	map = L.map("map", {
 		zoom : _zoom,
